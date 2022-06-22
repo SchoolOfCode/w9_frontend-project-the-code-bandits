@@ -22,8 +22,8 @@ const UploadForm = () => {
   const [resourceValues, setResourceValues] = useState({
     title: "",
     url: "",
-    content_type: "",
-    topic: "",
+    content_type: null,
+    topic: null,
   });
 
   /* handle change function to update state of multiple inputs with input name*/
@@ -94,7 +94,7 @@ const UploadForm = () => {
           value={resourceValues.content_type}
           onChange={handleChange}
         >
-          <option value="video">--Please Select Value--</option>
+          <option value="null">--Please Select Value--</option>
           <option value="video">Video</option>
           <option value="article">Article</option>
           <option value="docs">Docs</option>
@@ -111,6 +111,7 @@ const UploadForm = () => {
           value={resourceValues.topic}
           onChange={handleChange}
         >
+          <option value="">--Please Select Value--</option>
           <option value="javascript">Javascript</option>
           <option value="html">HTML</option>
           <option value="css">CSS</option>
