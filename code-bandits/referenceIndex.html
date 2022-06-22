@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Testing Logic</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content-wrapper">
+        <h1 class="title">Resource manager</h1>
+        <button type="button">Add resource</button>
+        <div class="search-resources">
+          <p class="search-resources-magnifying-glass">🔎</p>
+          <input type="text" class="search-resources-input" placeholder="search resources"/>
+        </div>
+      </div>
+    </header>
+    <aside class="filter">
+      <div class="filter-wrapper">
+        <h3 class="filter-subheading">Filter by</h3>
+        <fieldset class="filter-content">
+          <legend class="filter-content-subheading">Content type</legend>
+          <div class="content-item">
+            <input type="checkbox" name="content" id="content-article">
+            <label class="filter-content-list-item" for="content-article">Article</label>
+          </div>
+          <div class="content-item">
+            <input type="checkbox" name="content" id="content-video">
+            <label class="filter-content-list-item" for="content-video">Video</label>
+          </div>
+          <div class="content-item">
+            <input type="checkbox" name="content" id="content-documentation">
+            <label class="filter-content-list-item" for="content-documentation">Documentation</label>
+          </div>
+        </fieldset>
+        <fieldset class="filter-topic">
+          <legend class="filter-topic-subheading">Topic</legend>
+          <div class="filter-topic-item">
+            <input type="checkbox" name="content" id="topic-html">
+            <label class="filter-content-list-item" for="topic-html">HTML</label>
+          </div>
+          <div class="filter-topic-item">
+            <input type="checkbox" name="content" id="topic-css">
+            <label class="filter-content-list-item" for="topic-css">CSS</label>
+          </div>
+          <div class="filter-topic-item">
+            <input type="checkbox" name="content" id="topic-javascript">
+            <label class="filter-content-list-item" for="topic-javascript">Javascript</label>
+          </div>
+          <div class="filter-topic-item">
+            <input type="checkbox" name="content" id="topic-node">
+            <label class="filter-content-list-item" for="topic-node">Node</label>
+          </div>
+          <div class="filter-topic-item">
+            <input type="checkbox" name="content" id="topic-express">
+            <label class="filter-content-list-item" for="topic-express">Express</label>
+          </div>
+          <div class="filter-topic-item">
+            <input type="checkbox" name="content" id="topic-jest">
+            <label class="filter-content-list-item" for="topic-jest">Jest</label>
+          </div>
+        </fieldset>
+      </div>
+    </aside>
+    <main class="resource-wrapper">
+      <ul class="resource-content-item" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+        <li>
+          <a href="#" target="_blank">
+            <div class="resource-content-wrapper">
+              <div class="resource-header">
+                <p>[icon] type</p>
+              </div>
+              <div class="resource-body"></div>
+              <div class="resource-eta"></div>
+              <div class="resource-footer"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="./testing.js"></script>
+</body>
+</html>
