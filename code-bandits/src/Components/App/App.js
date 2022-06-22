@@ -9,8 +9,8 @@ function App() {
 
   const getResources = async () => {
     try {
-      const data = fetchFromAPI("http://localhost:3001/resources");
-      setResourceList(data);
+      const data = await fetchFromAPI("http://localhost:3001/resources");
+      setResourceList(data.payload);
       console.log(resourceList);
     } catch (error) {
       console.error(error.message);
