@@ -1,10 +1,10 @@
 import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
 
 const FilterSection = () => {
-    return ( 
+    return (
       <fieldset class="filter-content">
-          <legend class="filter-content-subheading">Content type</legend>
-          {/* map through array of prop items (possibly need a method for dealing with objects)
+        <legend class="filter-content-subheading">Content type</legend>
+        {/* map through array of prop items (possibly need a method for dealing with objects)
           for each unique property we will create a FilterCheckbox instant
           
           Find a way to store the user choice
@@ -34,12 +34,27 @@ const FilterSection = () => {
 
           present 
           
-          */
-          }
-          <FilterCheckbox />
-
+          */}
+        <div className="content-item">
+          <input type="checkbox" name="content" id="content-documentation" />
+          <label className="filter-content-list-item" for="content-documentation">
+            Documentation
+          </label>
+        </div>
+        <div className="content-item">
+          <input type="checkbox" name="content" id="content-article" />
+          <label className="filter-content-list-item" for="content-article">
+            Article
+          </label>
+        </div>
+        <div className="content-item">
+          <input type="checkbox" name="content" id="content-video" />
+          <label className="filter-content-list-item" for="content-video">
+            Video
+          </label>
+        </div>
       </fieldset>
-     );
+    );
 }
  
 export default FilterSection;
