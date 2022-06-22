@@ -2,4 +2,4 @@ const UploadForm = () => {
     return (  );
 }
  
-export default UploadForm;
+export default UploadForm
