@@ -16,7 +16,7 @@ const anotherObject = {
     contentType: {
         article:false,
         video:false,
-        doscumentation:false
+        documentation:false
     },
     searchTopic: {
         html:false,
@@ -28,8 +28,8 @@ const anotherObject = {
 
 User will type or past a URL - string
 Will input a title - string
-Choose topic from drop-down - value? 
-Choose type from drop-down - value?
+Choose topic from check box - choose multiple (up to three) items 
+Choose type from drop-down - value
 
 
 */
