@@ -18,14 +18,17 @@ const ResourceCard = ({ title, url, content_type, topic }) => {
   return (
     <li>
       <a href={url} target="_blank" rel='noreferrer'>
-        <div class="resource-content-wrapper">
-          <div class="resource-header">
+        <div className="resource-content-wrapper">
+          <div className="resource-header">
             {title}
             <p>{handleType(content_type)} type</p>
           </div>
-          <div class="resource-body"></div>
-          <div class="resource-content_type">{content_type}</div>
-          <div class="resource-footer">{topic}</div>
+          <div className="resource-body">
+            <h3 className='resource-title'>{title}</h3>
+            <p className='resource-description'>Click on the <a href="https://www.freecodecamp.org/news/git-diff-command/" target="_blank" rel="noreferrer">freecodecamp link on git diff commands</a> for more information</p>
+          </div>
+          <div className="resource-content_type">{content_type}</div>
+          <div className="resource-footer">{topic}</div>
         </div>
       </a>
     </li>
