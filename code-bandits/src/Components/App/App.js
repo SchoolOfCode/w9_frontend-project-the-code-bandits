@@ -2,6 +2,7 @@ import "../../index.css";
 import Header from "../Header/Header";
 import { useEffect, useState } from "react";
 import fetchFromAPI from "../../services/fetchFromAPI";
+import DisplayContainer from "../DisplayContainer/DisplayContainer";
 
 function App() {
   const [resourceList, setResourceList] = useState([]);
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <DisplayContainer resourceList={resourceList} />
     </div>
   );
 }
