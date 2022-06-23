@@ -63,71 +63,73 @@ const UploadForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      {/* Title input box  */}
-      <label>
-        Title
-        <input
-          type="text"
-          className="title-input"
-          name="title"
-          value={resourceValues.title}
-          onChange={handleChange}
-        />
-      </label>
-      {/* ===================== */}
+    <div className="upload-form-wrapper">
+      <form onSubmit={handleSubmit} className="upload-form-main">
+        {/* Title input box  */}
+        <label>
+          Title
+          <input
+            type="text"
+            className="title-input"
+            name="title"
+            value={resourceValues.title}
+            onChange={handleChange}
+          />
+        </label>
+        {/* ===================== */}
 
-      {/* URL input box  */}
-      <label>
-        URL
-        <input
-          type="text"
-          className="url-input"
-          name="url"
-          value={resourceValues.url}
-          onChange={handleChange}
-        />
-      </label>
-      {/* ===================== */}
+        {/* URL input box  */}
+        <label>
+          URL
+          <input
+            type="text"
+            className="url-input"
+            name="url"
+            value={resourceValues.url}
+            onChange={handleChange}
+          />
+        </label>
+        {/* ===================== */}
 
-      {/* Content type dropdown */}
-      <label>
-        Select Content Type
-        <select
-          className="content-type-dropdown"
-          name="content_type"
-          value={resourceValues.content_type}
-          onChange={handleChange}
-        >
-          <option value="">--Please Select Value--</option>
-          <option value="video">Video</option>
-          <option value="article">Article</option>
-          <option value="docs">Docs</option>
-        </select>
-      </label>
-      {/* ===================== */}
+        {/* Content type dropdown */}
+        <label>
+          Select Content Type
+          <select
+            className="content-type-dropdown"
+            name="content_type"
+            value={resourceValues.content_type}
+            onChange={handleChange}
+          >
+            <option value="">--Please Select Value--</option>
+            <option value="video">Video</option>
+            <option value="article">Article</option>
+            <option value="docs">Docs</option>
+          </select>
+        </label>
+        {/* ===================== */}
 
-      {/* Topic dropdown  */}
-      <label>
-        Select Topic
-        <select
-          className="topic-dropdown"
-          name="topic"
-          value={resourceValues.topic}
-          onChange={handleChange}
-        >
-          <option value="">--Please Select Value--</option>
-          <option value="javascript">Javascript</option>
-          <option value="html">HTML</option>
-          <option value="css">CSS</option>
-        </select>
-      </label>
-      {/* ===================== */}
+        {/* Topic dropdown  */}
+        <label>
+          Select Topic
+          <select
+            className="topic-dropdown"
+            name="topic"
+            value={resourceValues.topic}
+            onChange={handleChange}
+          >
+            <option value="">--Please Select Value--</option>
+            <option value="javascript">Javascript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+          </select>
+        </label>
+        {/* ===================== */}
 
-      {/* Submit Button  */}
-      <input type="submit" value="Submit Resource" />
-      {/* ===================== */}
-    </form>
+        {/* Submit Button  */}
+        <input type="submit" value="Submit Resource" />
+        {/* ===================== */}
+      </form>
+    </div>
   );
 };
 
