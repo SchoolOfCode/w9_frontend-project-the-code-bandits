@@ -60,6 +60,16 @@ legend {
   align-items: center;
 }
 
+.resource-content-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.resource-list-item {
+  margin-right: 1.5em;
+  background-color: blueviolet;
+}
+
 .resource-wrapper {
   grid-area: resource-wrapper;
   width: 100%;
@@ -69,7 +79,7 @@ legend {
 .resource-content-wrapper {
   display: grid;
   border: solid black 2px;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   width: 95%;
   background-color: grey;
 }
