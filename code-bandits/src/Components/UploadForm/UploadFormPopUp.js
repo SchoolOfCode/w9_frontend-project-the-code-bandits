@@ -4,7 +4,7 @@ import UploadForm from "./UploadForm";
 const UploadFormPopUp = ({ showForm, handleShow, handleClose }) => {
   return (
     <>
-      <Modal show={showForm} onHide={handleClose}>
+      <Modal backdrop="static" show={showForm} onHide={handleClose}>
         <UploadForm handleClose={handleClose} />{" "}
       </Modal>
     </>
