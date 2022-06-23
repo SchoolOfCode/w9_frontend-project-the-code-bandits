@@ -60,6 +60,20 @@ legend {
   align-items: center;
 }
 
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+} 
+a:hover,
+  a:focus {
+    color: #ff8a00;
+    outline: none;
+  }
+  
+
+
+
 .resource-content-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -68,9 +82,13 @@ legend {
 .resource-list-item {
   margin-right: 1.5em;
   margin-bottom: 1.5em;
-  background-color: ;
+  transition: 0.2s;
 }
+.resource-list-item :hover,.resource-list-item:focus { 
+background-color: #E8E8E8;
+    outline: none;
 
+}
 .resource-wrapper {
   grid-area: resource-wrapper;
   width: 100%;
@@ -101,12 +119,14 @@ legend {
  .resource-title {
   margin-top: 1.5em;
   margin-left: 1.5em;
+  
    
  }
 
  .resource-footer {
   margin-top: 1.5em;
   margin-left: 1.5em;
+  margin-bottom: 1.5em;
    
  }
 
