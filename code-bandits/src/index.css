@@ -104,6 +104,12 @@ legend {
    
  }
 
+ .resource-footer {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+   
+ }
+
 .search-resources {
   display: flex;
   align-items: center;
