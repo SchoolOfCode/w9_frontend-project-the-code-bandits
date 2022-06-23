@@ -62,6 +62,19 @@ legend {
   font-family: 'Montserrat', sans-serif; 
 }
 
+.header-add-resource-button {
+  font-family: 'Mukta', sans-serif;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  background-color: #31a4dd;
+  color:#E8E8E8
+}
+
+.header-add-resource-button:hover{
+  color: #ff8a00;
+}
+
 .design-div {
   min-height: 280px;
   background-color:#31a4dd  ;
