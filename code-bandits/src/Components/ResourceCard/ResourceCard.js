@@ -15,24 +15,26 @@ const ResourceCard = ({ title, url, content_type, topic }) => {
 
   return (
     <li className="resource-list-item">
-      <a href={url} target="_blank" rel="noreferrer">
-        <div className="resource-content-wrapper">
-          <div className="resource-header">
-            {title}
-            <p>
-              {() => {
-                handleType(content_type);
-              }}
-              type
-            </p>
-          </div>
-          <div className="resource-body">
-            <h3 className="resource-title">{title}</h3>
-          </div>
-          <div className="resource-content_type">{content_type}</div>
-          <div className="resource-footer">{topic}</div>
+      <div className="resource-content-wrapper">
+        <div className="resource-header">
+          {title}
+          <p>
+            {() => {
+              handleType(content_type);
+            }}
+            type
+          </p>
         </div>
-      </a>
+        <div className="resource-body">
+          <h3 className="resource-title">
+            <a href={url} target="_blank" rel="noreferrer">
+              {title}
+            </a>
+          </h3>
+        </div>
+        <div className="resource-content_type">{content_type}</div>
+        <div className="resource-footer">{topic}</div>
+      </div>
     </li>
   );
 };
