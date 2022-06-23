@@ -18,7 +18,7 @@
 
 import { useState } from "react";
 
-const UploadForm = () => {
+const UploadForm = ({ handleClose }) => {
   const [resourceValues, setResourceValues] = useState({
     title: "",
     url: "",
@@ -129,6 +129,7 @@ const UploadForm = () => {
         <input type="submit" value="Submit Resource" />
         {/* ===================== */}
       </form>
+      <button onClick={handleClose}>Close Me</button>
     </div>
   );
 };
