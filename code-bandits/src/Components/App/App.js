@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import { useEffect, useState } from "react";
 import fetchFromAPI from "../../services/fetchFromAPI";
 import DisplayContainer from "../DisplayContainer/DisplayContainer";
+import FilterSection from "../FilterSection/FilterSection";
 
 function App() {
   const [resourceList, setResourceList] = useState([]);
@@ -25,7 +26,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-    <UploadForm />
+      <UploadForm />
+      <FilterSection />
       <DisplayContainer resourceList={resourceList} />
     </div>
   );
