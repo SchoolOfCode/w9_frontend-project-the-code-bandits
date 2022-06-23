@@ -92,6 +92,17 @@ legend {
   
 }
 
+.resource-body {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+   
+ }
+
+ .resource-title {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+   
+ }
 
 .search-resources {
   display: flex;
