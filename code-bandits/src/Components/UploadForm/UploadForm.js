@@ -126,10 +126,16 @@ const UploadForm = ({ handleClose }) => {
         {/* ===================== */}
 
         {/* Submit Button  */}
-        <input type="submit" value="Submit Resource" />
+        <input
+          className="submit-form-button"
+          type="submit"
+          value="Submit Resource"
+        />
         {/* ===================== */}
       </form>
-      <button onClick={handleClose}>Close Me</button>
+      <button onClick={handleClose} className="close-form-button">
+        Close Me
+      </button>
     </div>
   );
 };

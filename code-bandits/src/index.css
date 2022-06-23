@@ -113,6 +113,36 @@ legend {
   z-index: 9;
 }
 
+.close-form-button {
+  font-family: 'Mukta', sans-serif;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  background-color: #31a4dd;
+  color:#E8E8E8;
+  margin-top: 20px;
+  
+}
+
+.close-form-button:hover {
+  color:red;
+}
+
+.submit-form-button {
+  font-family: 'Mukta', sans-serif;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  background-color: #31a4dd;
+  color:#E8E8E8;
+  margin-top: 20px;
+
+}
+
+.submit-form-button:hover {
+  color:#ff8a00;
+}
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
