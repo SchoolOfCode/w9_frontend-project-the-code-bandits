@@ -27,7 +27,12 @@ const ResourceCard = ({ title, url, content_type, topic }) => {
         </div>
         <div className="resource-body">
           <h3 className="resource-title">
-            <a href={url} target="_blank" rel="noreferrer">
+            <a
+              className="main-link"
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+            >
               {title}
             </a>
           </h3>

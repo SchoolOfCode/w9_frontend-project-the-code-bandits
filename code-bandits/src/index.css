@@ -61,17 +61,24 @@ legend {
 }
 
 
-a {
+.main-link {
   text-decoration: none;
-  transition: 0.2s;
+  
+  color: black;
 } 
-a:hover,
-  a:focus {
+.main-link:hover,
+  .main-link:focus {
+    text-decoration: none;
     color: #ff8a00;
+    transition: 0.2s;
     outline: none;
   }
-  
-.upload-form-main{
+
+  .main-link:visited{
+    text-decoration: none;
+  }
+
+.upload-form-main {
   font-family: 'Mukta', sans-serif;
 
 }
@@ -87,6 +94,7 @@ a:hover,
   margin-right: 1.5em;
   margin-bottom: 1.5em;
   transition: 0.2s;
+  text-decoration: none;
 }
 .resource-list-item :hover,.resource-list-item:focus { 
 background-color: #E8E8E8;
