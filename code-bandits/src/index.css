@@ -48,16 +48,17 @@ legend {
 .header {
   grid-area: header;
   width: 100%;
-  background-color: lightgreen;
+  background-color: whitesmoke;
 }
 
 .header-content-wrapper {
-  background-color: green;
+  background-color: whitesmoke;
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Montserrat', sans-serif; 
 }
 
 
