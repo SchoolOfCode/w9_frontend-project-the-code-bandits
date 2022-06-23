@@ -7,14 +7,7 @@ const Header = ({ handleShow }) => {
         <Button className="header-add-resource-button" onClick={handleShow}>
           Add resource
         </Button>
-        <div className="header-search-resources">
-          <p className="header-search-resources-magnifying-glass">🔎</p>
-          <input
-            type="text"
-            className="header-search-resources-input"
-            placeholder="search resources"
-          />
-        </div>
+        <div className="header-search-resources"></div>
       </div>
     </header>
   );
