@@ -14,7 +14,7 @@ const ResourceCard = ({ title, url, content_type, topic }) => {
   };
 
   return (
-    <li>
+    <li className="resource-list-item">
       <a href={url} target="_blank" rel="noreferrer">
         <div className="resource-content-wrapper">
           <div className="resource-header">
