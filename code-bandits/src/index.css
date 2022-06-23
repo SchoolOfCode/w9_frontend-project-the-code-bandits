@@ -1,18 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+legend {
+  text-decoration: underline;
+}
+
+.container {
+  border: 2px solid black;
+  margin: 0;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:  "header header header"
+                        "sidebar resource-wrapper resource-wrapper"
+                        "footer footer footer";
+}
+
+.filter-wrapper {
+  width: 95%;
+  margin: 1em auto;
+}
+
+.footer {
+  grid-area: footer;
+  height: 5rem;
+  width: 100%;
+  background-color: lightcoral;
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  background-color: lightgreen;
 }
 
 .header-content-wrapper {
+  background-color: green;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -20,13 +60,40 @@ code {
   align-items: center;
 }
 
-.header-search-resources {
+.resource-content-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.resource-list-item {
+  margin-right: 1.5em;
+  background-color: blueviolet;
+}
+
+.resource-wrapper {
+  grid-area: resource-wrapper;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.resource-content-wrapper {
+  display: grid;
+  border: solid black 2px;
+  /* margin: 1rem auto; */
+  width: 95%;
+  background-color: grey;
+}
+
+.search-resources {
   display: flex;
   align-items: center;
   gap: .7rem;
 }
 
-.header-title {
-  margin: 0;
-  padding-top: 0;
+.filter {
+  grid-area: sidebar;
+  height: auto;
+  width: 100%;
+  background-color: lightyellow;
 }
+
