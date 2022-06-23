@@ -113,7 +113,29 @@ legend {
   z-index: 9;
 }
 
-
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px; 
+  box-sizing: border-box;
+}
+ 
+select {
+  background-color: white;
+  border: thin solid black;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  margin-left: 2px;
+  margin-top: 50px;
+  padding: 0.5em 3.5em 0.5em 1em;
+}
+ 
+label {
+  margin-right: 5px;
+  margin-left: 10px;
+}
 
 .resource-content-list {
   display: grid;
