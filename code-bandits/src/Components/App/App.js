@@ -1,5 +1,5 @@
 import "../../index.css";
-import UploadForm from "../UploadForm/UploadForm";
+
 import UploadFormPopUp from "../UploadForm/UploadFormPopUp";
 import Header from "../Header/Header";
 import { useEffect, useState } from "react";
@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     getResources();
-  }, []);
+  }, [resourceList]);
 
   //function that will take an object (typeChecked) that will map through resourceList and check value of content_type and compare to typeChecked object if true
   //forIn loop to check properties of an object
@@ -123,17 +123,15 @@ function App() {
 
   return (
     <div className="App">
-
       <Header handleShow={handleShow} />
       <div className="design-div"></div>
-     <UploadFormPopUp
+      <UploadFormPopUp
         showForm={showForm}
         handleClose={handleClose}
         handleShow={handleShow}
       />
       <FilterSection ischecked={handleFilter} />
       <DisplayContainer resourceList={filteredList} />
-
     </div>
   );
 }
