@@ -1,32 +1,242 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+legend {
+  text-decoration: underline;
+}
+
+.container {
+  border: 2px solid black;
+  margin: 0;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:  "header header header"
+                        "sidebar resource-wrapper resource-wrapper"
+                        "footer footer footer";
+}
+
+.filter-wrapper {
+  width: 95%;
+  margin: 1em auto;
+}
+
+.footer {
+  grid-area: footer;
+  height: 5rem;
+  width: 100%;
+  background-color: lightcoral;
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  background-color: whitesmoke;
+  grid-template-rows: auto;
 }
 
 .header-content-wrapper {
+  background-color: whitesmoke;
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Montserrat', sans-serif; 
 }
 
-.header-search-resources {
+.header-add-resource-button {
+  font-family: 'Mukta', sans-serif;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  transition: transform .2s;
+  font-size: 20px;
+  background-color: #31a4dd;
+  color:#E8E8E8
+}
+
+.header-add-resource-button:hover{
+  color: #ff8a00;
+  transform: scale(1.5);
+}
+
+.design-div {
+  min-height: 280px;
+  background-color:#31a4dd  ;
+}
+
+.main-link {
+  text-decoration: none;
+  
+  color: black;
+} 
+.main-link:hover,
+  .main-link:focus {
+    text-decoration: none;
+    color: #ff8a00;
+    transition: 0.2s;
+    outline: none;
+  }
+
+  .main-link:visited{
+    text-decoration: none;
+  }
+
+.upload-form-main {
+  font-family: 'Mukta', sans-serif;
+
+}
+.upload-form-wrapper {
+  max-width: 50%;
+  height: 100%;
+  padding: 10px;
+  background-color:#31a4dd ;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.close-form-button {
+  font-family: 'Mukta', sans-serif;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  background-color: #31a4dd;
+  color:#E8E8E8;
+  margin-top: 20px;
+  
+}
+
+.close-form-button:hover {
+  color:red;
+}
+
+.submit-form-button {
+  font-family: 'Mukta', sans-serif;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  background-color: #31a4dd;
+  color:#E8E8E8;
+  margin-top: 20px;
+
+}
+
+.submit-form-button:hover {
+  color:#ff8a00;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px; 
+  box-sizing: border-box;
+}
+ 
+select {
+  background-color: white;
+  border: thin solid black;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  margin-left: 2px;
+  margin-top: 50px;
+  padding: 0.5em 3.5em 0.5em 1em;
+}
+ 
+label {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.resource-content-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resource-list-item {
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.resource-list-item :hover,.resource-list-item:focus { 
+background-color: #E8E8E8;
+    outline: none;
+
+}
+.resource-wrapper {
+  grid-area: resource-wrapper;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.resource-content-wrapper {
+  display: grid;
+  border-radius: 5px;
+  border: solid black 0px;
+  /* margin: 1rem auto; */
+  width: 95%;
+  background-color: 	#F5F5F5;
+}
+
+.resource-header {
+ margin-top: 1.5em;
+ margin-left: 1.5em;
+  
+}
+
+.resource-body {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+   
+ }
+
+ .resource-title {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  
+   
+ }
+
+ .resource-footer {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+   
+ }
+
+.search-resources {
   display: flex;
   align-items: center;
   gap: .7rem;
 }
 
-.header-title {
-  margin: 0;
-  padding-top: 0;
+.filter {
+  grid-area: sidebar;
+  height: auto;
+  width: 100%;
+  background-color: lightyellow;
 }
+
