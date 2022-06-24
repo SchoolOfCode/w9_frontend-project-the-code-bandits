@@ -2,11 +2,11 @@ import { useState } from "react";
 
 //set initial state as object with content-types set as false
 //onChange of checkbox, set properties to value of isChecked ie true
-const FilterSection = ({isChecked}) => {
+const FilterSection = ({ ischecked }) => {
   const [typeChecked, setTypeChecked] = useState({
     article: false,
     video: false,
-    documentation: false,
+    docs: false,
   });
 
   function handleChange(e) {
@@ -17,7 +17,7 @@ const FilterSection = ({isChecked}) => {
       [value]: isChecked,
     };
     setTypeChecked(newObj);
-    isChecked(newObj)
+    ischecked(newObj);
     console.log(typeChecked);
   }
 
@@ -31,7 +31,7 @@ const FilterSection = ({isChecked}) => {
           type="checkbox"
           name="content-type"
           id="content-documentation"
-          value="documentation"
+          value="docs"
         />
         <label className="filter-content-list-item" for="content-documentation">
           Documentation
@@ -69,6 +69,7 @@ const FilterSection = ({isChecked}) => {
 export default FilterSection;
 
 /*
+<<<<<<< HEAD
 
 const FilterSection({resourceList}) => resource state is available
 
@@ -80,4 +81,21 @@ We have a filtedList array that contains all resources that have been checked. i
 
 We could work with useEffect() with resourceList as it's state dependency. Every time resourceList 
 
+=======
+Initialise a state
+typeChecked, setTypedChecked = useState({
+              article: false
+              video: false
+              documentation: false
+            })
+input onChange=function to update the state object
+*/
+
+/*
+const FilterSection({resourceList}) => resource state is available
+map through resource list checking whether the typeChecked properties are equal to content_type property of resourceList item.
+If true add item to new array ie. const filteredList
+We have a filtedList array that contains all resources that have been checked. i.e documentation.
+We could work with useEffect() with resourceList as it's state dependency. Every time resourceList
+>>>>>>> c09af22d87a48ebd5809582d7eb9d5536fbc8e34
 */
