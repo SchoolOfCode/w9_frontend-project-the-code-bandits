@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     getResources();
-  }, [resourceList]);
+  }, []);
 
   //function that will take an object (typeChecked) that will map through resourceList and check value of content_type and compare to typeChecked object if true
   //forIn loop to check properties of an object

@@ -19,6 +19,7 @@ const FilterSection = ({ ischecked }) => {
     setTypeChecked(newObj);
     ischecked(newObj);
     console.log(typeChecked);
+    console.log(newObj);
   }
 
   return (
