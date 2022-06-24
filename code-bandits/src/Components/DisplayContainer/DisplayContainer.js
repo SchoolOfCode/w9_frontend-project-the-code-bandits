@@ -2,7 +2,7 @@ import ResourceCard from "../ResourceCard/ResourceCard";
 
 const DisplayContainer = ({ resourceList }) => {
   return (
-    <div>
+    <ul className="resource-content-list">
       {resourceList.map((item) => (
         <ResourceCard
           key={item.id}
@@ -12,7 +12,7 @@ const DisplayContainer = ({ resourceList }) => {
           topic={item.topic}
         ></ResourceCard>
       ))}
-    </div>
+    </ul>
   );
 };
 export default DisplayContainer;
