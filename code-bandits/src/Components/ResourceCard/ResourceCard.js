@@ -22,7 +22,7 @@ const ResourceCard = ({ title, url, content_type, topic }) => {
             {() => {
               handleType(content_type);
             }}
-            content_type
+            {content_type}
           </p>
         </div>
         <div className="resource-body">
