@@ -9,10 +9,11 @@ import FilterSection from "../FilterSection/FilterSection";
 
 function App() {
   const [resourceList, setResourceList] = useState([]);
+  
   const [showForm, setShowForm] = useState(false);
-
   const handleClose = () => setShowForm(false);
   const handleShow = () => setShowForm(true);
+
   const getResources = async () => {
     try {
       const data = await fetchFromAPI("http://localhost:3001/resources");
@@ -40,13 +41,13 @@ function App() {
     video: false,
     documentation: false,
   }*/
+
   const [filteredList, setFilteredList] = useState(resourceList);
   console.log(filteredList);
 
   useEffect(() => {
     setFilteredList(resourceList);
   }, [resourceList]);
-  //const [checked, setIsChecked] = useState(false);
 
   function handleFilter(obj) {
     console.log(obj);
