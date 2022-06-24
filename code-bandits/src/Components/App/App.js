@@ -27,6 +27,7 @@ function App() {
     <div className="App">
       <Header />
       <UploadForm />
+      {/* <FilterContainer /> */}
       <FilterSection />
       <DisplayContainer resourceList={resourceList} />
     </div>

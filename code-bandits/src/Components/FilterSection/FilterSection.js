@@ -2,7 +2,7 @@ import { useState } from "react";
 
 //set initial state as object with content-types set as false
 //onChange of checkbox, set properties to value of isChecked ie true
-const FilterSection = () => {
+const FilterSection = ({isChecked}) => {
   const [typeChecked, setTypeChecked] = useState({
     article: false,
     video: false,
@@ -17,7 +17,7 @@ const FilterSection = () => {
       [value]: isChecked,
     };
     setTypeChecked(newObj);
-
+    isChecked(newObj)
     console.log(typeChecked);
   }
 
@@ -67,12 +67,17 @@ const FilterSection = () => {
   );
 };
 export default FilterSection;
+
 /*
-Initialise a state
-typeChecked, setTypedChecked = useState({
-              article: false
-              video: false
-              documentation: false
-            })
-input onChange=function to update the state object
-*/ // import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
+
+const FilterSection({resourceList}) => resource state is available
+
+map through resource list checking whether the typeChecked properties are equal to content_type property of resourceList item.
+
+If true add item to new array ie. const filteredList
+
+We have a filtedList array that contains all resources that have been checked. i.e documentation.
+
+We could work with useEffect() with resourceList as it's state dependency. Every time resourceList 
+
+*/
