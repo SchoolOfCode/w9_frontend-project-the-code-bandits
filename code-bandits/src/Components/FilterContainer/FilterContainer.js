@@ -6,7 +6,6 @@ const FilterContainer = () => {
         <div class="filter-wrapper">
         <h3 class="filter-subheading">Filter by</h3>
         <FilterSection />
-        <FilterSection />
         </div>
       </aside>
      );
