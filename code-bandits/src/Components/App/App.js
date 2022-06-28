@@ -2,7 +2,7 @@ import "../../index.css";
 
 import { useEffect, useState } from "react";
 
-import fetchFromAPI from "../../services/fetchFromAPI";
+import fetchFromAPI from "../../services/fetchFromAPI.js";
 
 // Components
 import UploadFormPopUp from "../UploadForm/UploadFormPopUp";
@@ -20,7 +20,7 @@ function App() {
   const handleClose = () => setShowForm(false);
   const handleShow = () => setShowForm(true);
 
-// fetchFromAPI comes from services folder
+  // fetchFromAPI comes from services folder
   const getResources = async () => {
     try {
       const data = await fetchFromAPI("http://localhost:3001/resources");
@@ -31,21 +31,21 @@ function App() {
     }
   };
 
-// fetch on initial load
+  // fetch on initial load
   useEffect(() => {
     getResources();
   }, []);
 
-// State to handle filtered resources
+  // State to handle filtered resources
   const [filteredList, setFilteredList] = useState(resourceList);
   console.log(filteredList);
 
-// Immediate re-render of filteredList (displayed resources) on update
+  // Immediate re-render of filteredList (displayed resources) on update
   useEffect(() => {
     setFilteredList(resourceList);
   }, [resourceList]);
 
-// Returns reources that match object properties
+  // Returns resources that match object properties
   function handleFilter(obj) {
     const filtered = resourceList.filter((item) => {
       if (!obj.article && !obj.docs && !obj.video) {
@@ -60,7 +60,7 @@ function App() {
     });
     console.log("filtered", filtered);
     setFilteredList(filtered);
-    
+
     console.log(filteredList);
   }
 
