@@ -1,13 +1,12 @@
 /*
-Create an example object
+
+- Example resource objects
 
 const exObject = {
     url: "string",
     title: "string",
     contentType: [article, video, documentation],
     searchTopic: [html, css, javascript]
-
-
 };
 
 const anotherObject = {
@@ -23,13 +22,11 @@ const anotherObject = {
         css:false,
         javascript:false
     };
-
 }
 
 User will type or past a URL - string
 Will input a title - string
 Choose topic from drop-down - value? 
 Choose type from drop-down - value?
-
 
 */

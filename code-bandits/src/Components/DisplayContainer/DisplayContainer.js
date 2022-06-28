@@ -1,5 +1,9 @@
 import ResourceCard from "../ResourceCard/ResourceCard";
 
+// resourceList state is passed down from App component via props
+// function maps through each resource and assigns property values to ResourceCard
+// displays ResourceCard in <ul> element
+
 const DisplayContainer = ({ resourceList }) => {
   return (
     <ul className="resource-content-list">
@@ -15,4 +19,5 @@ const DisplayContainer = ({ resourceList }) => {
     </ul>
   );
 };
+
 export default DisplayContainer;

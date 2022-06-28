@@ -1,3 +1,5 @@
+// example array of Resources for unit testing
+
 export const initialResources = [
   {
     title: "Git diff Command – How to Compare Changes in Your Code",
@@ -8,7 +10,7 @@ export const initialResources = [
   {
     title: "SQL Injection",
     url: "https://www.w3schools.com/sql/sql_injection.asp",
-    content_type: "tutorial",
+    content_type: "docs",
     topic: "SQL",
   },
   {

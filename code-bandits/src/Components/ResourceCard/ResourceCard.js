@@ -1,8 +1,13 @@
-import { useState } from "react";
-const ResourceCard = ({ title, url, content_type, topic }) => {
-  /* const [icon, setIcon] = useState(null);
+//import { useState } from "react";
 
- const handleType = (content_type) => {
+// object properties for ResourceCard passed down from DisplayContainer component
+
+const ResourceCard = ({ title, url, content_type, topic }) => {
+  /* code to set icon for content type - needs debugging
+  
+  const [icon, setIcon] = useState("");
+
+  const handleType = (content_type) => {
     if (content_type === "video") {
       setIcon("📽");
     } else if (content_type === "article") {
