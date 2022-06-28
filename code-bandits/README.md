@@ -1,12 +1,44 @@
-# Group Project - Bootcampers Resource Library
+# Code Bandits - Bootcampers Resource Library
 
-A resource library for bootcampers, where they can upload useful links and search by media preference. 
+![appImage](public/w9_project_screenshot_2.png)
+
+A resource library for bootcampers, where they can upload useful links and search by media preference.
 
 ## Features
 
 - Filter resources by media type
 - Upload resources
 - Responsive resource display
+
+## Technologies
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+
+## File Structure
+
+code-bandits
+│   README.md
+│
+│
+└───src
+│   │  index.js
+│   │  
+│   │
+│   └───scripts
+│       │   createTable.js
+│       │   deleteTable.js
+│       │   populateTable.js
+│   
+└───models
+|    │   
+|    │  resources.js
+
 
 
 ## Available Scripts
