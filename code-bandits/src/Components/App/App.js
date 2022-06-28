@@ -9,7 +9,7 @@ import FilterSection from "../FilterSection/FilterSection";
 
 function App() {
   const [resourceList, setResourceList] = useState([]);
-  
+
   const [showForm, setShowForm] = useState(false);
   const handleClose = () => setShowForm(false);
   const handleShow = () => setShowForm(true);
@@ -52,7 +52,7 @@ function App() {
   function handleFilter(obj) {
     console.log(obj);
     const filtered = resourceList.filter((item) => {
-      if (!obj.title && !obj.docs && !obj.video) {
+      if (!obj.article && !obj.docs && !obj.video) {
         console.log("hello", item);
         return item;
       } else {

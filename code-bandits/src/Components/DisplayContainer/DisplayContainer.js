@@ -8,7 +8,7 @@ const DisplayContainer = ({ resourceList }) => {
           key={item.id}
           title={item.title}
           url={item.url}
-          contentType={item.content_type}
+          content_type={item.content_type}
           topic={item.topic}
         ></ResourceCard>
       ))}
