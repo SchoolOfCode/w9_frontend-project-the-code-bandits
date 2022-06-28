@@ -1,4 +1,9 @@
 import { Button } from "react-bootstrap";
+
+// handleShow function passed down from App component
+// is called onClick of Button
+// shows UploadFormPopUp component
+
 const Header = ({ handleShow }) => {
   return (
     <header className="header">

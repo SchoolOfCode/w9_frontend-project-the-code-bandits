@@ -1,13 +1,14 @@
 // import everything we need
-// create functional component
-// Create Form
+// create UploadForm component
+
+// JSX
 // text input with article heading label
 // text input for url
-
 // dropdown for content_type
 // checkbox for topics
 // submit button
 
+// States and functions
 // state is form values
 // update state with statefunction with onchange (e.target.value)
 // createResource function
