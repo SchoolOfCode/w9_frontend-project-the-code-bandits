@@ -19,6 +19,7 @@ const FilterSection = ({ ischecked }) => {
     setTypeChecked(newObj);
     ischecked(newObj);
     console.log(typeChecked);
+    console.log(newObj);
   }
 
   return (
@@ -69,7 +70,6 @@ const FilterSection = ({ ischecked }) => {
 export default FilterSection;
 
 /*
-<<<<<<< HEAD
 
 const FilterSection({resourceList}) => resource state is available
 
@@ -81,7 +81,6 @@ We have a filtedList array that contains all resources that have been checked. i
 
 We could work with useEffect() with resourceList as it's state dependency. Every time resourceList 
 
-=======
 Initialise a state
 typeChecked, setTypedChecked = useState({
               article: false
@@ -97,5 +96,4 @@ map through resource list checking whether the typeChecked properties are equal 
 If true add item to new array ie. const filteredList
 We have a filtedList array that contains all resources that have been checked. i.e documentation.
 We could work with useEffect() with resourceList as it's state dependency. Every time resourceList
->>>>>>> c09af22d87a48ebd5809582d7eb9d5536fbc8e34
 */
