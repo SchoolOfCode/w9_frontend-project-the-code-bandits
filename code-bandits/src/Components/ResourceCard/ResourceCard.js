@@ -18,12 +18,6 @@ const ResourceCard = ({ title, url, content_type, topic }) => {
       <div className="resource-content-wrapper">
         <div className="resource-header">
           {title}
-          <p>
-            {() => {
-              handleType(content_type);
-            }}
-            {content_type}
-          </p>
         </div>
         <div className="resource-body">
           <h3 className="resource-title">

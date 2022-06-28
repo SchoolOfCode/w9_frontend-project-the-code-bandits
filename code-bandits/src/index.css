@@ -240,3 +240,10 @@ background-color: #E8E8E8;
   background-color: lightyellow;
 }
 
+.filter-content {
+  font-family: 'Mukta', sans-serif;
+}
+
+legend {
+  border-bottom: 0px
+}
