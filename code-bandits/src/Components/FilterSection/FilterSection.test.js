@@ -5,6 +5,7 @@ import FilterSection from "./FilterSection";
 test("FilterSection component renders successfully", function () {
   render(<FilterSection />);
   expect(
-    screen.getAllByLabelText("filter-content-list-item")
+    screen.getByLabelText("Article")
   ).toBeInTheDocument();
 });
+
