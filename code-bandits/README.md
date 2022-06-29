@@ -22,24 +22,86 @@ A resource library for bootcampers, where they can upload useful links and searc
 
 ## File Structure
 
+```
 code-bandits
 │   README.md
 │
 │
-└───src
-│   │  index.js
-│   │  
-│   │
-│   └───scripts
-│       │   createTable.js
-│       │   deleteTable.js
-│       │   populateTable.js
-│   
-└───models
-|    │   
-|    │  resources.js
-
-
+└─── public
+|        |
+|        └─ favicon.ico
+|        └─ index.html
+|        └─ logo192.png
+|        └─ logo512.png 
+|        └─ manifest.json
+|        └─ robots.txt
+|        └─ w9_project_screenshot_2.png
+|
+|
+└─── src
+       │  
+       │  
+       │
+       └─── Components
+       |           │
+       |           └─── App
+       |           │       | 
+       |           |       └─ App.js
+       |           |       └─ App.test.js
+       |           |
+       |           |
+       |           └─── DisplayContainer
+       |           |       |
+       |           |       └─ DisplayContainer.js
+       |           |       └─ DisplayContainer.test.js
+       |           |
+       |           |
+       |           └─── FilterSection
+       |           |       |
+       |           |       └─ FilterSection.js
+       |           |       └─ FilterSection.test.js
+       |           |
+       |           |
+       |           └─── Header
+       |           |       |
+       |           |       └─ Header.js
+       |           |       └─ Header.test.js
+       |           |
+       |           |
+       |           └─── ResourceCard 
+       |           |       |
+       |           |       └─ ResourceCard.js
+       |           |       └─ ResourceCard.test.js
+       |           |
+       |           |
+       |           └─── UploadForm
+       |                   |
+       |                   └─ UploadForm.js
+       |                   └─ UploadForm.test.js
+       |                   └─ UploadFormPopUp.js
+       |                   └─ UploadFormPopUp.test.js
+       |
+       |
+       |
+       └─── Libs
+       |       |
+       |       └─ data.js
+       |       └─ index.js
+       |
+       |
+       |
+       └─── services
+       |       |
+       |       └─ fetchFromAPI.js
+       |
+       |
+       |
+       └─ index.css
+       └─ index.js
+       └─ logo.svg
+       └─ reportWebVitals.js
+       └─ setupTests.js
+```
 
 ## Available Scripts
 
